@@ -1,0 +1,52 @@
+version: 2
+
+models:
+  - name: dim_city
+    description: "Dimension model for cities, implementing SCD Type 2."
+    columns:
+      - name: city_key
+        tests:
+          - unique
+          - not_null
+  - name: dim_customer
+    description: "Dimension model for customers, implementing SCD Type 2."
+    columns:
+      - name: customer_key
+        tests:
+          - unique
+          - not_null
+  - name: dim_employee
+    description: "Dimension model for employees, implementing SCD Type 2."
+    columns:
+      - name: employee_key
+        tests:
+          - unique
+          - not_null
+  - name: dim_payment_method
+    description: "Dimension model for payment methods, implementing SCD Type 2."
+    columns:
+      - name: payment_method_key
+        tests:
+          - unique
+          - not_null
+  - name: dim_stock_item
+    description: "Dimension model for stock items, implementing SCD Type 2."
+    columns:
+      - name: stock_item_key
+        tests:
+          - unique
+          - not_null
+  - name: dim_supplier
+    description: "Dimension model for suppliers, implementing SCD Type 2."
+    columns:
+      - name: supplier_key
+        tests:
+          - unique
+          - not_null
+  - name: dim_transaction_type
+    description: "Dimension model for transaction types, implementing SCD Type 2."
+    columns:
+      - name: transaction_type_key
+        tests:
+          - unique
+          - not_null

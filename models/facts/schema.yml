@@ -1,0 +1,45 @@
+version: 2
+
+models:
+  - name: fct_movement
+    description: "Fact table for stock item movements."
+    columns:
+      - name: movement_key
+        tests:
+          - unique
+          - not_null
+  - name: fct_order
+    description: "Fact table for orders."
+    columns:
+      - name: order_key
+        tests:
+          - unique
+          - not_null
+  - name: fct_purchase
+    description: "Fact table for purchases."
+    columns:
+      - name: purchase_key
+        tests:
+          - unique
+          - not_null
+  - name: fct_sale
+    description: "Fact table for sales."
+    columns:
+      - name: sale_key
+        tests:
+          - unique
+          - not_null
+  - name: fct_stock_holding
+    description: "Fact table for current stock holdings."
+    columns:
+      - name: stock_holding_key
+        tests:
+          - unique
+          - not_null
+  - name: fct_transaction
+    description: "Fact table for customer and supplier transactions."
+    columns:
+      - name: transaction_key
+        tests:
+          - unique
+          - not_null
