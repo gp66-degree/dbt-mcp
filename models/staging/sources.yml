@@ -1,0 +1,18 @@
+version: 2
+sources:
+  - name: wwi
+    schema: dbt_source
+    tables:
+      - name: city
+      - name: customer
+      - name: employee
+      - name: movement
+      - name: order
+      - name: payment_method
+      - name: purchase
+      - name: sale
+      - name: stock_holding
+      - name: stock_item
+      - name: supplier
+      - name: transaction
+      - name: transaction_type
